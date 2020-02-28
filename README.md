@@ -10,8 +10,16 @@
 * [Questions](#questions)
                         
 ##Installation
-                        
-                        
+Clone or Download the code to your computer
+
+Run this command in your terminal using Node.js
+    -npm install
+
+Run the code in your terminal using this command
+    -node index.js
+
+Follow the prompts in the terminal to generate a README template.
+        
 ##Usage
                         
                         
