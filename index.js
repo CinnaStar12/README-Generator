@@ -32,7 +32,10 @@ inquirer.prompt({
                 axios.get(repoUrl).then(function (res) {
                     const { name, description } = res.data;
                     const { login, avatar_url } = res.data.owner;
+                
                     const readMe = `#${name}
+![badge](https://img.shields.io/github/languages/top/${login}/${repoChoice})
+
 ##${description}
                         
 * [Installation](#installation)
@@ -48,10 +51,10 @@ inquirer.prompt({
                         
 ##Usage
                         
-                        
 ##Credits
-Made by: ${login}
-![Creator](${avatar_url})                       
+Made By:${login}
+![profile](${avatar_url})                        
+
 ##License
                         
                         
@@ -81,8 +84,7 @@ Made by: ${login}
 ##Contributing
 
 ##Tests
-
-##Questions
+       
 `
                             appendFileAsync("README.md", licenseAppend).then(function(){
                                 console.log("README generated!\n\n Make sure to fill out all the relevant information in each section of the readme and license");
@@ -91,14 +93,27 @@ Made by: ${login}
                         }
                         else if (licenseChoice === "Apache License 2.0") {
                             const license = licenses.l.apache
+                            const licenseAppend =`${license}
                             
+##Contributing
+
+##Tests
+        
+`
                             appendFileAsync("README.md", licenseAppend).then(function(){
                                 console.log("README generated!\n\n Make sure to fill out all the relevant information in each section of the readme and license");
                             });
                         }
                         else if (licenseChoice === "GNU GPL v3.0") {
                             const license = licenses.l.gnu
-                            appendFileAsync("README.md", license).then(function(){
+                            const licenseAppend =`${license}
+                            
+##Contributing
+
+##Tests
+      
+`
+                            appendFileAsync("README.md", licenseAppend).then(function(){
                             console.log("README generated!\n\n Make sure to fill out all the relevant information in each section of the readme and license");
                         })}
                         

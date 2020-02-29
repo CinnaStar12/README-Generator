@@ -1,4 +1,6 @@
 #README-Generator
+![badge](https://img.shields.io/github/languages/top/CinnaStar12/README-Generator)
+
 ##An easy to use basic README generator for GitHub
                         
 * [Installation](#installation)
@@ -10,22 +12,12 @@
 * [Questions](#questions)
                         
 ##Installation
-Clone or Download the code to your computer
-
-Run this command in your terminal using Node.js
-    -npm install
-
-Run the code in your terminal using this command
-    -node index.js
-
-Follow the prompts in the terminal to generate a README template.
-        
+                        
+                        
 ##Usage
                         
                         
-##Credits
-Made by: CinnaStar12
-![Creator](https://avatars0.githubusercontent.com/u/57468910?v=4)                       
+
 ##License
                         
                         
@@ -54,5 +46,4 @@ Made by: CinnaStar12
 ##Contributing
 
 ##Tests
-
-##Questions
+       
